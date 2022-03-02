@@ -1,0 +1,12 @@
+<div [style.text-align]="'center'" id="checklist">
+  <label for="task-input" style="font-style: italic">Add a Task to do</label>
+  <input type="text" id="task-input" #newTask style="margin-left: 15px" />
+  <br />
+  <button
+    type="button"
+    (click)="addNewTask(newTask.value)"
+    style="margin-top: 25px; font-weight: bold; margin-left: 25px"
+  >
+    Add
+  </button>
+</div>
